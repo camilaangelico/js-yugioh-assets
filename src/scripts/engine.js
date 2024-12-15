@@ -212,16 +212,8 @@ function init() {
     drawCards(5, playerSides.computer);
 
     const bgm = document.getElementById("bgm");
-
-    // Adiciona um ouvinte de evento para o movimento do mouse
-    document.body.addEventListener('mousemove', function() {
-    // Reproduz o áudio quando o mouse se move
-    bgm.play()
-
-    // Remove o ouvinte após a primeira reprodução para evitar múltiplas tentativas de reprodução
-    document.body.removeEventListener('mousemove');
-
-    });
+    
+    bgm.play();
 
 }
 
